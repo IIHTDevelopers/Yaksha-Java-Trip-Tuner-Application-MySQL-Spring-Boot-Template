@@ -36,7 +36,7 @@ public class ItineraryBoundaryTest {
 	}
 
 	@Test
-	public void testNameNotBlank() throws IOException {
+	public void itineraryNameNotBlank() throws IOException {
 		ItineraryDTO itineraryDTO = new ItineraryDTO();
 		itineraryDTO.setName("");
 		itineraryDTO.setStartDate(new Date());
@@ -50,7 +50,7 @@ public class ItineraryBoundaryTest {
 	}
 
 	@Test
-	public void testNameSize() throws IOException {
+	public void itineraryNameSize() throws IOException {
 		ItineraryDTO itineraryDTO = new ItineraryDTO();
 		itineraryDTO.setName("a".repeat(256)); // Exceeds max size
 		itineraryDTO.setStartDate(new Date());
