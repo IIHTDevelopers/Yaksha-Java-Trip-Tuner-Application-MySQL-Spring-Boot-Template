@@ -35,7 +35,7 @@ public class DestinationBoundaryTest {
 	}
 
 	@Test
-	public void testNameNotBlank() throws IOException {
+	public void destinationNameNotBlank() throws IOException {
 		DestinationDTO destinationDTO = new DestinationDTO();
 		destinationDTO.setName("");
 		destinationDTO.setType("City");
@@ -49,7 +49,7 @@ public class DestinationBoundaryTest {
 	}
 
 	@Test
-	public void testNameSize() throws IOException {
+	public void destinationNameSize() throws IOException {
 		DestinationDTO destinationDTO = new DestinationDTO();
 		destinationDTO.setName("a".repeat(256)); // Exceeds max size
 		destinationDTO.setType("City");
